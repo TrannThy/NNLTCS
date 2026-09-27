@@ -1,0 +1,12 @@
+E:\NNLT CS\NNLTCSharpC4\MyLib\bin\Debug\net9.0\MyLib.deps.json
+E:\NNLT CS\NNLTCSharpC4\MyLib\bin\Debug\net9.0\MyLib.dll
+E:\NNLT CS\NNLTCSharpC4\MyLib\bin\Debug\net9.0\MyLib.pdb
+E:\NNLT CS\NNLTCSharpC4\MyLib\obj\Debug\net9.0\MyLib.GeneratedMSBuildEditorConfig.editorconfig
+E:\NNLT CS\NNLTCSharpC4\MyLib\obj\Debug\net9.0\MyLib.AssemblyInfoInputs.cache
+E:\NNLT CS\NNLTCSharpC4\MyLib\obj\Debug\net9.0\MyLib.AssemblyInfo.cs
+E:\NNLT CS\NNLTCSharpC4\MyLib\obj\Debug\net9.0\MyLib.csproj.CoreCompileInputs.cache
+E:\NNLT CS\NNLTCSharpC4\MyLib\obj\Debug\net9.0\MyLib.sourcelink.json
+E:\NNLT CS\NNLTCSharpC4\MyLib\obj\Debug\net9.0\MyLib.dll
+E:\NNLT CS\NNLTCSharpC4\MyLib\obj\Debug\net9.0\refint\MyLib.dll
+E:\NNLT CS\NNLTCSharpC4\MyLib\obj\Debug\net9.0\MyLib.pdb
+E:\NNLT CS\NNLTCSharpC4\MyLib\obj\Debug\net9.0\ref\MyLib.dll
