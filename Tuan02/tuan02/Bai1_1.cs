@@ -1,51 +1,45 @@
 using System;
 
-class Bai1_1
+class Thongtin
 {
-    // field
+    // FIELD
     private string Hoten;
     private int Namsinh;
 
-    //constructor mặc định
-    public Bai1_1()
+    // CONSTRUCTOR mặc định
+    public Thongtin()
     {
-        Hoten="";//gia tri ban đầu
-        Namsinh =0;
+        Hoten = "";
+        Namsinh = 0;
     }
 
-    // constructor co tham so
-    public Bai1_1(string Hoten, int Namsinh)
+    // CONSTRUCTOR có tham số
+    public Thongtin(string Hoten, int Namsinh)
     {
-        this.Hoten=Hoten;
-        this.Namsinh=Namsinh;
+        this.Hoten = Hoten;
+        this.Namsinh = Namsinh;
     }
 
-    // property
+    // PROPERTY
     public string HoTen
     {
-        get{ return Hoten; }//lay gia tri
-        set{ Hoten=value; }//gan gia trị moi
+        get { return Hoten; }
+        set { Hoten = value; }
     }
 
     public int NamSinh
     {
-        get{ return Namsinh; }
-        set{ Namsinh=value; }
+        get { return Namsinh; }
+        set { Namsinh = value; }
     }
 
-    // method tinh tuoi
+    // METHOD tính tuổi
     public int TinhTuoi()
     {
-        return DateTime.Now.Year -Namsinh;//lay nam hien tại tru nam sinh
+        return DateTime.Now.Year - Namsinh;
     }
 
-    // method xuat thong tin
-    public void Xuat()
-    {
-        Console.WriteLine("ho ten: " +Hoten);
-        Console.WriteLine("nam sinh: "+ Namsinh);
-        Console.WriteLine("tuoi: " + TinhTuoi());
-    }
+    // METHOD nhập thông tin
     public void Nhap()
     {
         Console.Write("nhap ho ten: ");
@@ -54,12 +48,23 @@ class Bai1_1
         Console.Write("nhap nam sinh: ");
         Namsinh = int.Parse(Console.ReadLine()!);
     }
-        static void Main()
-    {
-        Bai1_1 bai1_1=new Bai1_1();
 
-        bai1_1.Nhap();
-        bai1_1.Xuat();
+    // METHOD xuất thông tin
+    public void Xuat()
+    {
+        Console.WriteLine("ho ten: " + Hoten);
+        Console.WriteLine("nam sinh: " + Namsinh);
+        Console.WriteLine("tuoi: " + TinhTuoi());
     }
 }
 
+class Bai1_1
+{
+    public static void Main()
+    {
+        Thongtin thongtin = new Thongtin();
+
+        thongtin.Nhap();
+        thongtin.Xuat();
+    }
+}

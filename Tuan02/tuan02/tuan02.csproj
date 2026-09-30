@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     
-    <StartupObject>Bai13</StartupObject>
+    <StartupObject>Bai3_6</StartupObject>
   </PropertyGroup>
 
 </Project>
