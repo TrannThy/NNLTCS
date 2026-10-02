@@ -1,0 +1,7 @@
+public class MonHoc//bai4.1
+{
+    public string MaMon { get; set; } = "";
+    public string TenMon { get; set; } = "";
+    public string He { get; set; } = "";
+    public byte SoTiet { get; set; }
+}
