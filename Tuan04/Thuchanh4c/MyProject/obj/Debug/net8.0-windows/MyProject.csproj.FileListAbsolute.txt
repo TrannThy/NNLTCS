@@ -1,0 +1,17 @@
+E:\NNLT CS\NNLTCSharpC4\Thuchanh4c\MyProject\obj\Debug\net8.0-windows\MyProject.frmBaiTap1.resources
+E:\NNLT CS\NNLTCSharpC4\Thuchanh4c\MyProject\obj\Debug\net8.0-windows\MyProject.csproj.GenerateResource.cache
+E:\NNLT CS\NNLTCSharpC4\Thuchanh4c\MyProject\obj\Debug\net8.0-windows\MyProject.GeneratedMSBuildEditorConfig.editorconfig
+E:\NNLT CS\NNLTCSharpC4\Thuchanh4c\MyProject\obj\Debug\net8.0-windows\MyProject.AssemblyInfoInputs.cache
+E:\NNLT CS\NNLTCSharpC4\Thuchanh4c\MyProject\obj\Debug\net8.0-windows\MyProject.AssemblyInfo.cs
+E:\NNLT CS\NNLTCSharpC4\Thuchanh4c\MyProject\obj\Debug\net8.0-windows\MyProject.csproj.CoreCompileInputs.cache
+E:\NNLT CS\NNLTCSharpC4\Thuchanh4c\MyProject\obj\Debug\net8.0-windows\MyProject.sourcelink.json
+E:\NNLT CS\NNLTCSharpC4\Thuchanh4c\MyProject\bin\Debug\net8.0-windows\MyProject.exe
+E:\NNLT CS\NNLTCSharpC4\Thuchanh4c\MyProject\bin\Debug\net8.0-windows\MyProject.deps.json
+E:\NNLT CS\NNLTCSharpC4\Thuchanh4c\MyProject\bin\Debug\net8.0-windows\MyProject.runtimeconfig.json
+E:\NNLT CS\NNLTCSharpC4\Thuchanh4c\MyProject\bin\Debug\net8.0-windows\MyProject.dll
+E:\NNLT CS\NNLTCSharpC4\Thuchanh4c\MyProject\bin\Debug\net8.0-windows\MyProject.pdb
+E:\NNLT CS\NNLTCSharpC4\Thuchanh4c\MyProject\obj\Debug\net8.0-windows\MyProject.dll
+E:\NNLT CS\NNLTCSharpC4\Thuchanh4c\MyProject\obj\Debug\net8.0-windows\refint\MyProject.dll
+E:\NNLT CS\NNLTCSharpC4\Thuchanh4c\MyProject\obj\Debug\net8.0-windows\MyProject.pdb
+E:\NNLT CS\NNLTCSharpC4\Thuchanh4c\MyProject\obj\Debug\net8.0-windows\MyProject.genruntimeconfig.cache
+E:\NNLT CS\NNLTCSharpC4\Thuchanh4c\MyProject\obj\Debug\net8.0-windows\ref\MyProject.dll

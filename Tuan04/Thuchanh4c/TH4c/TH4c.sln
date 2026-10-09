@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TH4c", "TH4c.csproj", "{139419A0-C3E6-44C3-B3FE-8EE23B2AA2F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{139419A0-C3E6-44C3-B3FE-8EE23B2AA2F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{139419A0-C3E6-44C3-B3FE-8EE23B2AA2F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{139419A0-C3E6-44C3-B3FE-8EE23B2AA2F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{139419A0-C3E6-44C3-B3FE-8EE23B2AA2F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C57FB1E6-8781-4924-8E81-B9B904C5E13C}
+	EndGlobalSection
+EndGlobal
