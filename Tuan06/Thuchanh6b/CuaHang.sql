@@ -1,0 +1,82 @@
+﻿USE master;
+GO
+
+-- 1. Tạo Database QLCuaHang nếu chưa có
+IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'QLCuaHang')
+BEGIN
+    CREATE DATABASE QLCuaHang;
+END
+GO
+
+USE QLCuaHang;
+GO
+
+-- Xóa bảng cũ nếu tồn tại để tránh xung đột
+IF OBJECT_ID('CHITIET_HOADON', 'U') IS NOT NULL DROP TABLE CHITIET_HOADON;
+IF OBJECT_ID('HOADON', 'U') IS NOT NULL DROP TABLE HOADON;
+IF OBJECT_ID('TONKHO', 'U') IS NOT NULL DROP TABLE TONKHO;
+IF OBJECT_ID('SANPHAM', 'U') IS NOT NULL DROP TABLE SANPHAM;
+GO
+
+-- 2. Tạo bảng SANPHAM (MaSP tự động tăng)
+CREATE TABLE SANPHAM (
+    MaSP INT IDENTITY(1,1) PRIMARY KEY,
+    TenSP NVARCHAR(50) NOT NULL
+);
+GO
+
+-- 3. Tạo bảng TONKHO (Khóa chính gồm MaSP và NgayTon)
+CREATE TABLE TONKHO (
+    MaSP INT,
+    NgayTon DATE,
+    SLDau INT DEFAULT 0,
+    SLNhap INT DEFAULT 0,
+    SLBan INT DEFAULT 0,
+    PRIMARY KEY (MaSP, NgayTon),
+    CONSTRAINT FK_TonKho_SanPham FOREIGN KEY (MaSP) REFERENCES SANPHAM(MaSP)
+);
+GO
+
+-- 4. Tạo bảng HOADON (MaHD tự động tăng)
+CREATE TABLE HOADON (
+    MaHD INT IDENTITY(1,1) PRIMARY KEY,
+    NgayTao DATE,
+    TinhTrangThanhToan NVARCHAR(50)
+);
+GO
+
+-- 5. Tạo bảng CHITIET_HOADON
+CREATE TABLE CHITIET_HOADON (
+    MaHD INT,
+    MaSP INT,
+    SoLuong INT,
+    PRIMARY KEY (MaHD, MaSP),
+    CONSTRAINT FK_CTHD_HoaDon FOREIGN KEY (MaHD) REFERENCES HOADON(MaHD),
+    CONSTRAINT FK_CTHD_SanPham FOREIGN KEY (MaSP) REFERENCES SANPHAM(MaSP)
+);
+GO
+
+-- ==========================================
+-- 6. THÊM DỮ LIỆU BAN ĐẦU THEO ĐỀ BÀI
+-- ==========================================
+SET IDENTITY_INSERT SANPHAM ON;
+INSERT INTO SANPHAM (MaSP, TenSP) VALUES (1, N'Trà xanh');
+INSERT INTO SANPHAM (MaSP, TenSP) VALUES (2, N'Mức dâu');
+INSERT INTO SANPHAM (MaSP, TenSP) VALUES (3, N'Cafe');
+SET IDENTITY_INSERT SANPHAM OFF;
+GO
+
+-- Thêm dữ liệu tồn kho ban đầu (ngày 2016-10-22)
+INSERT INTO TONKHO (MaSP, NgayTon, SLDau, SLNhap, SLBan) VALUES (1, '2016-10-22', 50, 0, 0);
+INSERT INTO TONKHO (MaSP, NgayTon, SLDau, SLNhap, SLBan) VALUES (2, '2016-10-22', 50, 0, 0);
+INSERT INTO TONKHO (MaSP, NgayTon, SLDau, SLNhap, SLBan) VALUES (3, '2016-10-22', 50, 0, 0);
+GO
+UPDATE TONKHO SET NgayTon = CAST(GETDATE() AS DATE);
+
+
+-- Xem lại dữ liệu
+SELECT * FROM SANPHAM;
+SELECT * FROM TONKHO;
+SELECT * FROM HOADON;
+SELECT * FROM CHITIET_HOADON;
+GO
